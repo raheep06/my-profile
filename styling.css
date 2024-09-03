@@ -20,3 +20,14 @@ body {
 .title {
     font-size: large;
 }
+
+.top-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+}
+
+.top-menu-item {
+    padding-left: 1em;
+    padding-right: 1em
+}
