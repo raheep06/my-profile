@@ -43,16 +43,21 @@ main {
     padding: 20px 0 20px 0;
 }
 
+h4 {
+    text-align: center;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card {
-    flex: 1 1 200px;
+    flex: 200px;
     padding: 15px;
-    border: 1px solid gray;
+    border: 5px solid gray;
 }
 
 em {
@@ -95,10 +100,26 @@ button:hover {
     cursor: pointer
 }
 
-.keywords-skills > div {
-    flex: 0 1 50px;
-    background-color: green;
-    padding: 5px;
+.keywords-skills {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.keywords-skills #externallink {
+    flex: 50px;
+    border-radius: 5px;
+    background-color: lightskyblue;
+    padding: 10px;
+    text-align: center;
+}
+
+.keywords-skills #singleskill {
+    flex: 50px;
+    border-radius: 5px;
+    background-color: palegreen;
+    padding: 10px;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -106,7 +127,7 @@ button:hover {
       display: none;
     }
   
-.card {
-     width: 100%;
+    .card {
+        width: 100%;
     }
 }
