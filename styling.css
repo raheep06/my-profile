@@ -1,5 +1,5 @@
 body {
-    font-family: 'Fredoka', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Fredoka', Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 .title-bar {
@@ -34,7 +34,7 @@ body {
 
 main {
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 10%  
 }
 
 .intro {
@@ -78,10 +78,21 @@ em {
 }
 
 button {
-    background-color: lightskyblue;
+    background-color: black;
     color: white;
+    box-sizing: border-box;
+    border-style: dashed;
+    outline-color: lightskyblue;
+    padding-left: 50px;
+    padding-right: 50px;
     padding: 5px;
     border-radius: 15px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: lightskyblue;
+    cursor: pointer
 }
 
 .keywords-skills > div {
