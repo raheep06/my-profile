@@ -2,13 +2,15 @@ body {
     font-family: 'Fredoka', Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
+
 .title-bar {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: center
 }
+
 
 .sticky-bar {
     position: sticky;
@@ -24,12 +26,17 @@ body {
 .top-menu{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    width: fit-content;
 }
 
 .top-menu-item {
     padding-left: 1em;
     padding-right: 1em
+}
+
+.horizontal-rule {
+    width: 100%;
 }
 
 main {
@@ -102,6 +109,7 @@ button:hover {
 
 .keywords-skills {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     gap: 10px;
 }
@@ -126,7 +134,22 @@ button:hover {
     .intro-right {
       display: none;
     }
-  
+    
+    .title-bar {
+        justify-content: center;
+    }
+    
+    .top-menu {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: min-content;
+    }
+
+    .top-menu-item {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
     .card {
         width: 100%;
     }
